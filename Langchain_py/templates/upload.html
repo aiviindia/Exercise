@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Table Extractor - Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Table Extractor</h1>
+        <form method="post" enctype="multipart/form-data" class="upload-form">
+            <div class="file-input-wrapper">
+                <input type="file" name="file" id="file" accept=".pdf" required>
+                <label for="file">Choose a PDF file</label>
+            </div>
+            <button type="submit" class="submit-btn">Extract Tables</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extracted Tables</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <h1>Extracted Tables</h1>
+    <ul>
+    {% for file in csv_files %}
+        <li><a href="{{ url_for('download_file', filename=file) }}">{{ file }}</a></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
